@@ -1,0 +1,173 @@
+/* ================= Global Styles ================= */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a3421c;
+  color: white;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease;
+}
+
+header {
+  background: linear-gradient(90deg, #136937, #8a8820);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  transition: background 0.5s ease;
+}
+
+header h1 {
+  margin: 0.2rem 0;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #dcd0ff;
+  font-style: italic;
+}
+
+button#change-color-btn {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #326363, #831726);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button#change-color-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ================= Sections ================= */
+main {
+  padding: 2rem;
+}
+
+section {
+  background: linear-gradient(145deg, #be7a537c, #b4a30a);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+h2, h3, p {
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+textarea::placeholder {
+  color: #eee;
+}
+
+textarea:focus, select:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.2);
+}
+
+select {
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+button {
+  background: linear-gradient(135deg, #2d1a70, #44752c);
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ================= Lists ================= */
+ul {
+  list-style: none;
+  padding-left: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(20, 238, 49, 0.3);
+  transition: background-color 0.3s;
+}
+
+ul li:hover {
+  background-color: rgba(255,255,255,0.1);
+  cursor: pointer;
+}
+
+/* Highlight today’s entry */
+.today {
+  background-color: rgba(6, 224, 61, 0.3);
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(6, 224, 61, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* Scrollbars */
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 4px;
+}
+
+ul::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.1);
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  button, select, textarea {
+    width: 100%;
+    margin-bottom: 0.8rem;
+  }
+}

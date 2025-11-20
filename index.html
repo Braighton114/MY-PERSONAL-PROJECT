@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Self-Awareness Journey Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="istockphoto-1691437841-612x612.jpg" alt="Dashboard Logo" style="height:60px;">
+    <h1>My Self-Awareness Journey Dashboard</h1>
+    <p>Track your moods, habits, and daily reflections to understand yourself better.</p>
+
+    <!-- Button to change dashboard background color -->
+    <button id="change-color-btn">Change Background Color</button>
+  </header>
+
+  <main>
+    <!-- Mood Tracker Section -->
+    <section id="mood-tracker">
+      <h2>Daily Mood Tracker</h2>
+      <img src="istockphoto-1388645967-612x612.jpg" alt="Mood illustration" style="width:100px; display:block; margin-bottom:10px;">
+      <p>Select your mood for today:</p>
+      <select id="mood-select">
+        <option value="">--Select Mood--</option>
+        <option value="Happy 🙂">Happy 🙂</option>
+        <option value="Sad 😢">Sad 😢</option>
+        <option value="Stressed 😣">Stressed 😣</option>
+        <option value="Excited 😃">Excited 😃</option>
+      </select>
+      <button id="save-mood">Save Mood</button>
+
+      <div id="mood-history">
+        <h3>Mood History</h3>
+        <ul id="mood-list"></ul>
+      </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section id="reflection-prompts">
+      <h2>Daily Reflection</h2>
+      <img src="images/reflection.png" alt="Reflection illustration" style="width:100px; display:block; margin-bottom:10px;">
+      <p>Write your reflections for today:</p>
+      <textarea id="reflection" placeholder="What made you happy today? What challenged you today?"></textarea>
+      <button id="save-reflection">Save Reflection</button>
+
+      <div id="reflection-history">
+        <h3>Reflection History</h3>
+        <ul id="reflection-list"></ul>
+      </div>
+    </section>
+
+    <!-- Daily Reflection Explanation Section -->
+    <section id="reflection-explanation" style="display:none;">
+      <h2>About Daily Reflection</h2>
+      <img src="images/daily_reflection.png" alt="Daily Reflection" style="width:100px; display:block; margin-bottom:10px;">
+      <p>
+        A daily reflection is when you take a little time each day to think about your experiences, feelings, actions, and thoughts. 
+        It’s like looking back at your day to understand yourself better and learn from what happened.
+      </p>
+      <p>For example, during a daily reflection, you might ask yourself:</p>
+      <ul>
+        <li>What went well today?</li>
+        <li>What challenges did I face?</li>
+        <li>How did I feel throughout the day?</li>
+        <li>What can I improve tomorrow?</li>
+      </ul>
+      <p>
+        People often write these reflections in a journal, but you can also do them mentally or use apps. 
+        Over time, daily reflections help you track personal growth, notice patterns in your moods or behavior, and make better choices.
+      </p>
+    </section>
+
+    <!-- Habit Tracker Section -->
+    <section id="habit-tracker">
+      <h2>Habit Tracker</h2>
+      <img src="images/habits.png" alt="Habits illustration" style="width:100px; display:block; margin-bottom:10px;">
+      <p>Mark your completed habits for today:</p>
+      <label><input type="checkbox" class="habit" value="Journaling"> Journaling</label>
+      <label><input type="checkbox" class="habit" value="Meditation"> Meditation</label>
+      <label><input type="checkbox" class="habit" value="Exercise"> Exercise</label>
+      <button id="save-habits">Save Habits</button>
+
+      <div id="habit-history">
+        <h3>Habit History</h3>
+        <ul id="habit-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Self-Awareness Journey Dashboard</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
